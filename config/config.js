@@ -1,4 +1,4 @@
 module.exports = {
-    prefix: '?',
+    globalPrefix: '?',
     disablePrefixInDMs: false
 }
