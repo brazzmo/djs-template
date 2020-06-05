@@ -11,7 +11,7 @@ module.exports = {
     },
     run: (client, message, args) => {
         message.channel.send('Calculating Latency...').then(msg => {
-            const e = new Discord.RichEmbed()
+            const e = new Discord.MessageEmbed()
             .setColor('RANDOM')
             .addField('Bot Latency', `**${Math.floor(client.ping)}ms**`, true)
             .addField('API Latency', `**${msg.createdTimestamp - message.createdTimestamp}ms**`, true)
